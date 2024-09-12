@@ -27,8 +27,6 @@ Things have gone so horribly wrong here, and not in the direction I was expectin
 
 ### Long Message
 
-This isn't right, either, but at least predictably so. The content area within the preview is too small, so the message has been truncated.
-
-Here, the content area 
+This isn't right, either, but at least predictably so. The content area within the preview is too small, so the message has been truncated. But at least the ContextMenu preview matches it, I guess.
 
 ![long_message](./assets/long_message.png)
