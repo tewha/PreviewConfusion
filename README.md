@@ -23,7 +23,7 @@ I put this first because this actually looks pretty good. It's probably just luc
 
 ![short_message](./assets/short_message.png)
 
-Things have gone so horribly wrong here, and not in the direction I was expecting. The preview area is smaller despite having more content. Why does this short message get high white bars above and below it?
+Things have gone so horribly wrong here, and not in the direction I was expecting. The preview area is smaller despite having more content. But then the ContextMenu preview gets swole. Why does this short message get high white bars above and below it?
 
 ### Long Message
 
