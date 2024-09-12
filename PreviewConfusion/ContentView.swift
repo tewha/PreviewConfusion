@@ -36,6 +36,8 @@ struct ContentView: View {
                 } label: {
                     Text(message.title)
                 }
+
+                // Relevant code here (I think).
                 .contextMenu {
                     Button {
                         // nothing to do
