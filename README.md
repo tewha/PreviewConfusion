@@ -9,7 +9,7 @@ We've got a few major areas here:
 1. The main view. We can just ignore this. It's there, maining, just like you'd expect.
 2. Buttons to hold (not tap) to activate previews.
 3. The ContextMenu preview (white background).
-4. The hosted PreviewView (light grey background).
+4. The hosted preview view (light grey background).
 
 Now let's look at how things have gone wrong.
 

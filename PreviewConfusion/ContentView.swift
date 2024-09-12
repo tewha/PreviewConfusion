@@ -43,7 +43,25 @@ struct ContentView: View {
                         Label("View Profile", systemImage: "person.circle")
                     }
                 } preview: {
-                    PreviewView("Person1", message: message.text)
+                    // The preview view.
+                    HStack(spacing: 10) {
+                        Image("Person1")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(minWidth: 120, maxWidth: 120)
+                        VStack {
+                            HStack {
+                                Text("“\(message.text)”")
+                                Spacer()
+                            }
+                            HStack {
+                                Spacer()
+                                Text(" – Person1").italic()
+                            }
+                        }
+                    }
+                    .padding(5)
+                    .background(Color("Person1"))
                 }
             }
         }
