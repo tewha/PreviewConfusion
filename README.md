@@ -13,6 +13,10 @@ We've got a few major areas here:
 
 Now let's look at how things have gone wrong.
 
+To see all this for yourself, run the project. There are three buttons: hold (don't just tap) on one to show the message preview.
+
+The problem is demonstratable in the iOS Simulator, though I've found hold gestures a little tricky to trigger in the Simulator. It helps to pause a moment after moving the mouse before clicking and holding the button.
+
 ### Medium Message
 
 ![medium_message](./assets/medium_message.png)
