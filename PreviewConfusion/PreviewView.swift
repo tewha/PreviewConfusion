@@ -37,11 +37,3 @@ struct PreviewView: View {
         .background(Color(person))
     }
 }
-
-#Preview {
-    // We don't really want a list, but it simulates our actual display conditions pretty well. A VStack takes the entire height, which is not like our preview at all.
-    List {
-        PreviewView("Person1", message: "Can you hear me? I can’t hear you. Give me a minute to set up my headphones.")
-    }
-}
-
