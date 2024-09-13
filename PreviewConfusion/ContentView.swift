@@ -25,7 +25,8 @@ struct ContentView: View {
     let messages = [
         Message("Short", text: "Is this thing even on?"),
         Message("Medium", text: "Can you hear me? I can’t hear you. Give me a minute to set up my headphones."),
-        Message("Long", text: "Can you hear me? I can’t hear you. Give me a minute to set up my headphones. I still can't hear you.")
+        Message("Long", text: "Can you hear me? I can’t hear you. Give me a minute to set up my headphones. I still can't hear you."),
+        Message("Huge", text: "Can you hear me? I can’t hear you. Give me a minute to set up my headphones. I still can't hear you. Let me try my other headphones and call you again on my iPhone")
     ]
     var body: some View {
         VStack(spacing: 10) {
@@ -45,25 +46,19 @@ struct ContentView: View {
                         Label("View Profile", systemImage: "person.circle")
                     }
                 } preview: {
-                    // The preview view.
                     HStack(spacing: 10) {
                         Image("Person1")
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(idealWidth: 120, maxWidth: 120)
-                        VStack {
-                            HStack {
-                                Text("“\(message.text)”")
-                                    .frame(idealWidth: 250)
-                                Spacer()
-                            }
-                            HStack {
-                                Spacer()
-                                Text(" – Person1").italic()
-                            }
+                            .scaledToFit()
+                            .frame(idealWidth: 100, maxWidth: 100)
+                        VStack(alignment: .leading) {
+                            Text("“\(message.text)”")
+                                .frame(idealWidth: 250)
+                            Text(" – Person1").italic()
+                                .frame(maxWidth: .infinity, alignment: .trailing)
                         }
                     }
-                    .padding(5)
+                    .padding(10)
                     .background(Color("Person1"))
                 }
             }
