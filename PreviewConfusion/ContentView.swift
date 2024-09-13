@@ -50,10 +50,11 @@ struct ContentView: View {
                         Image("Person1")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(minWidth: 120, maxWidth: 120)
+                            .frame(idealWidth: 120, maxWidth: 120)
                         VStack {
                             HStack {
                                 Text("“\(message.text)”")
+                                    .frame(idealWidth: 250)
                                 Spacer()
                             }
                             HStack {
