@@ -2,6 +2,8 @@
 
 I'm trying to get the preview to consistently match the size of the content, which can be any (reasonable) length.
 
+**UPDATE:** It's beeen fixed. See the end of the document.
+
 What do I mean?
 
 We've got a few major areas here:
@@ -34,3 +36,7 @@ Things have gone so horribly wrong here, and not in the direction I was expectin
 This isn't right, either, but at least predictably so. The content area within the preview is too small, so the message has been truncated. But at least the ContextMenu preview matches it, I guess.
 
 ![long_message](./assets/long_message.png)
+
+## The Fix
+
+The minimal fix is to [supply ideal widths for the photo and text areas](https://github.com/tewha/PreviewConfusion/commit/d52aca58412b1f7043dd26d5c5d12db87382d842). I believe the original layout is ambiguous, which causes it to be calculated different sizes in different phases of layout.
